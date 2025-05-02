@@ -1,0 +1,171 @@
+2025-05-02 20:08:17,104 - GIL - WARNING - No API key provided. Using demo mode with limited functionality.
+2025-05-02 20:08:47,040 - GIL - WARNING - No API key provided. Using demo mode with limited functionality.
+2025-05-02 20:08:50,489 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 20:09:53,676 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 20:09:54,164 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 20:10:35,388 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 20:10:35,890 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 20:11:05,927 - GIL - INFO - Sending prompt to gemini-2.0-flash with 282 tokens
+2025-05-02 20:11:09,041 - GIL - INFO - Received response with 168 tokens. Estimated cost: $0.000098
+2025-05-02 20:11:09,057 - GIL - ERROR - Error in main loop: 'bool' object has no attribute 'substitute'
+Traceback (most recent call last):
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1583, in run
+    self.loop.run_until_complete(self.analyze_prompt())
+  File "C:\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1244, in analyze_prompt
+    console.print(table)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1705, in print
+    extend(render(renderable, render_options))
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1326, in render
+    for render_output in iter_render:
+                         ^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 515, in __rich_console__
+    yield from self._render(console, render_options, widths)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 759, in _render
+    self.box.substitute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'substitute'
+
+2025-05-02 20:11:24,587 - GIL - INFO - Sending prompt to gemini-2.0-flash with 215 tokens
+2025-05-02 20:11:26,112 - GIL - INFO - Received response with 110 tokens. Estimated cost: $0.000068
+2025-05-02 20:11:42,615 - GIL - INFO - Sending prompt to gemini-2.0-flash with 331 tokens
+2025-05-02 20:11:46,060 - GIL - INFO - Received response with 512 tokens. Estimated cost: $0.000233
+2025-05-02 20:11:46,064 - GIL - ERROR - Error in main loop: 'bool' object has no attribute 'substitute'
+Traceback (most recent call last):
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1587, in run
+    self.loop.run_until_complete(self.evaluate_prompt_quality())
+  File "C:\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1447, in evaluate_prompt_quality
+    console.print(table)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1705, in print
+    extend(render(renderable, render_options))
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1326, in render
+    for render_output in iter_render:
+                         ^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 515, in __rich_console__
+    yield from self._render(console, render_options, widths)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 759, in _render
+    self.box.substitute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'substitute'
+
+2025-05-02 20:12:59,769 - GIL - INFO - Sending prompt to gemini-2.0-flash with 345 tokens
+2025-05-02 20:13:02,928 - GIL - INFO - Received response with 229 tokens. Estimated cost: $0.000129
+2025-05-02 20:13:02,931 - GIL - INFO - Sending prompt to gemini-2.0-flash with 294 tokens
+2025-05-02 20:13:10,364 - GIL - INFO - Received response with 190 tokens. Estimated cost: $0.000108
+2025-05-02 20:13:53,701 - GIL - ERROR - Error exporting prompt and analysis: [WinError 3] The system cannot find the path specified: ''
+2025-05-02 20:14:16,822 - GIL - ERROR - Error exporting prompt and analysis: [WinError 3] The system cannot find the path specified: ''
+2025-05-02 20:19:51,633 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 20:19:52,118 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 20:20:31,318 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 20:20:31,798 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 20:20:48,595 - GIL - INFO - Sending prompt to gemini-2.0-flash with 282 tokens
+2025-05-02 20:20:50,270 - GIL - INFO - Received response with 163 tokens. Estimated cost: $0.000096
+2025-05-02 20:20:50,273 - GIL - INFO - Sending prompt to gemini-2.0-flash with 216 tokens
+2025-05-02 20:20:51,487 - GIL - INFO - Received response with 87 tokens. Estimated cost: $0.000060
+2025-05-02 20:28:57,032 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 20:28:57,545 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 20:29:17,259 - GIL - INFO - Sending prompt to gemini-2.0-flash with 282 tokens
+2025-05-02 20:29:19,005 - GIL - INFO - Received response with 168 tokens. Estimated cost: $0.000098
+2025-05-02 20:29:22,100 - GIL - INFO - Sending prompt to gemini-2.0-flash with 215 tokens
+2025-05-02 20:29:23,331 - GIL - INFO - Received response with 66 tokens. Estimated cost: $0.000052
+2025-05-02 20:41:26,632 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 20:41:27,127 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 20:41:45,516 - GIL - INFO - Sending prompt to gemini-2.0-flash with 282 tokens
+2025-05-02 20:41:48,433 - GIL - INFO - Received response with 180 tokens. Estimated cost: $0.000103
+2025-05-02 20:41:48,445 - GIL - INFO - Sending prompt to gemini-2.0-flash with 214 tokens
+2025-05-02 20:41:49,580 - GIL - INFO - Received response with 78 tokens. Estimated cost: $0.000056
+2025-05-02 20:56:43,237 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 20:56:43,824 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 20:57:16,548 - GIL - INFO - Sending prompt to gemini-2.0-flash with 299 tokens
+2025-05-02 20:57:19,271 - GIL - INFO - Received response with 263 tokens. Estimated cost: $0.000136
+2025-05-02 20:57:19,273 - GIL - INFO - Sending prompt to gemini-2.0-flash with 199 tokens
+2025-05-02 20:57:20,677 - GIL - INFO - Received response with 125 tokens. Estimated cost: $0.000072
+2025-05-02 20:57:58,278 - GIL - ERROR - Error exporting prompt and analysis: [WinError 3] The system cannot find the path specified: ''
+2025-05-02 20:58:07,746 - GIL - INFO - Sending prompt to gemini-2.0-flash with 496 tokens
+2025-05-02 20:58:10,294 - GIL - INFO - Received response with 325 tokens. Estimated cost: $0.000184
+2025-05-02 20:58:10,305 - GIL - ERROR - Error in main loop: 'bool' object has no attribute 'substitute'
+Traceback (most recent call last):
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1618, in run
+    self.loop.run_until_complete(self.analyze_prompt())
+  File "C:\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1254, in analyze_prompt
+    console.print(table)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1705, in print
+    extend(render(renderable, render_options))
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1326, in render
+    for render_output in iter_render:
+                         ^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 515, in __rich_console__
+    yield from self._render(console, render_options, widths)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 759, in _render
+    self.box.substitute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'substitute'
+
+2025-05-02 20:58:39,625 - GIL - ERROR - Error exporting prompt and analysis: [WinError 3] The system cannot find the path specified: ''
+2025-05-02 20:59:02,400 - GIL - ERROR - Error exporting prompt and analysis: [WinError 3] The system cannot find the path specified: ''
+2025-05-02 21:27:29,144 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 21:27:29,784 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 21:29:51,008 - GIL - INFO - Sending prompt to gemini-2.0-flash with 287 tokens
+2025-05-02 21:29:52,941 - GIL - INFO - Received response with 214 tokens. Estimated cost: $0.000116
+2025-05-02 21:29:52,949 - GIL - ERROR - Error in main loop: 'bool' object has no attribute 'substitute'
+Traceback (most recent call last):
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1618, in run
+    self.loop.run_until_complete(self.analyze_prompt())
+  File "C:\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1254, in analyze_prompt
+    console.print(table)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1705, in print
+    extend(render(renderable, render_options))
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1326, in render
+    for render_output in iter_render:
+                         ^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 515, in __rich_console__
+    yield from self._render(console, render_options, widths)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 759, in _render
+    self.box.substitute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'substitute'
+
+2025-05-02 21:30:10,723 - GIL - INFO - Sending prompt to gemini-2.0-flash with 191 tokens
+2025-05-02 21:30:12,978 - GIL - INFO - Received response with 245 tokens. Estimated cost: $0.000116
+2025-05-02 21:48:19,559 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 21:48:20,174 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 21:49:28,785 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 21:49:29,414 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 21:50:02,170 - GIL - INFO - Sending prompt to gemini-2.0-flash with 291 tokens
+2025-05-02 21:50:04,740 - GIL - INFO - Received response with 269 tokens. Estimated cost: $0.000137
+2025-05-02 21:50:04,740 - GIL - INFO - Sending prompt to gemini-2.0-flash with 225 tokens
+2025-05-02 21:50:06,167 - GIL - INFO - Received response with 103 tokens. Estimated cost: $0.000067
+2025-05-02 21:51:13,301 - GIL - INFO - Sending prompt to gemini-2.0-flash with 430 tokens
+2025-05-02 21:51:16,719 - GIL - INFO - Received response with 497 tokens. Estimated cost: $0.000240
+2025-05-02 21:51:16,727 - GIL - ERROR - Error in main loop: 'bool' object has no attribute 'substitute'
+Traceback (most recent call last):
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1622, in run
+    self.loop.run_until_complete(self.evaluate_prompt_quality())
+  File "C:\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1482, in evaluate_prompt_quality
+    console.print(table)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1705, in print
+    extend(render(renderable, render_options))
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1326, in render
+    for render_output in iter_render:
+                         ^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 515, in __rich_console__
+    yield from self._render(console, render_options, widths)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 759, in _render
+    self.box.substitute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'substitute'
+

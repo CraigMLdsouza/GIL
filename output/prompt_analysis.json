@@ -1,0 +1,139 @@
+{
+  "prompt": "Write a short, free-verse poem to cheer up my girlfriend. She's been feeling down lately because of [briefly explain reason, e.g., stress at work, a recent disappointment, general seasonal blues]. The poem should be uplifting, supportive, and express my affection for her. Focus on her positive qualities, like [mention 2-3 specific qualities you admire, e.g., her kindness, her intelligence, her sense of humor]. Avoid clich\u00e9s and overly sentimental language. Aim for a tone that is comforting and reassuring, like a warm hug. The poem should be approximately 8-12 lines long.",
+  "analysis": {
+    "task": "Write a short, free-verse poem to uplift the user's girlfriend.",
+    "main_topics": [
+      "Poetry",
+      "Relationships",
+      "Affection",
+      "Support"
+    ],
+    "output_format": "Poem (free-verse)",
+    "style_and_tone": "Uplifting, supportive, affectionate, comforting, reassuring, like a warm hug. Avoid clich\u00e9s and overly sentimental language.",
+    "audience": "The user's girlfriend",
+    "complexity_level": "Intermediate",
+    "constraints": [
+      "Short (8-12 lines)",
+      "Free-verse",
+      "Avoid clich\u00e9s",
+      "Avoid overly sentimental language",
+      "Focus on positive qualities",
+      "Tailored to the specific reason for the girlfriend's sadness and her specific positive qualities"
+    ],
+    "examples_provided": [
+      "Stress at work, a recent disappointment, general seasonal blues (as potential reasons for sadness)",
+      "Kindness, intelligence, sense of humor (as potential positive qualities)"
+    ],
+    "implicit_assumptions": [
+      "The user has a girlfriend.",
+      "The user wants to express genuine affection.",
+      "The user knows their girlfriend well enough to identify specific positive qualities.",
+      "The girlfriend appreciates poetry."
+    ],
+    "recommended_template": "Poetry Generation with Specific Constraints and Personalization",
+    "reasoning": "The prompt clearly requests a poem with specific stylistic and content-related constraints. The user provides context about the recipient and her situation, indicating a need for personalization. The tone and length are explicitly defined, making it a well-defined prompt for poem generation.",
+    "local_analysis": {
+      "success": true,
+      "entities": [
+        [
+          "2",
+          "CARDINAL"
+        ],
+        [
+          "Aim",
+          "PERSON"
+        ],
+        [
+          "approximately 8-12",
+          "CARDINAL"
+        ]
+      ],
+      "noun_chunks": [
+        "a short, free-verse poem",
+        "my girlfriend",
+        "She",
+        "reason",
+        "stress",
+        "work",
+        "a recent disappointment",
+        "general seasonal blues",
+        "The poem",
+        "my affection",
+        "her",
+        "her positive qualities",
+        "2-3 specific qualities",
+        "you",
+        ", e.g., her kindness",
+        "her intelligence",
+        "her sense",
+        "humor",
+        "clich\u00e9s",
+        "language",
+        "a tone",
+        "that",
+        "a warm hug",
+        "The poem",
+        "approximately 8-12 lines"
+      ],
+      "key_verbs": [
+        "write",
+        "cheer",
+        "feel",
+        "explain",
+        "uplift",
+        "express",
+        "focus",
+        "mention",
+        "admire",
+        "avoid",
+        "aim",
+        "comfort"
+      ],
+      "sentiment_words": [
+        "short",
+        "free",
+        "lately",
+        "briefly",
+        "recent",
+        "general",
+        "seasonal",
+        "supportive",
+        "positive",
+        "specific",
+        "overly",
+        "sentimental",
+        "reassuring",
+        "warm",
+        "approximately",
+        "long"
+      ],
+      "subjects": [
+        "She",
+        "poem",
+        "you",
+        "that",
+        "poem"
+      ],
+      "objects": [
+        "poem",
+        "girlfriend",
+        "reason",
+        "work",
+        "affection",
+        "her",
+        "qualities",
+        "qualities",
+        "humor",
+        "clich\u00e9s",
+        "language",
+        "tone",
+        "hug"
+      ],
+      "categories": [
+        "explanation"
+      ]
+    }
+  },
+  "refined_prompt": "Write a short, free-verse poem to cheer up my girlfriend. She's been feeling down lately because of [briefly explain reason, e.g., stress at work, a recent disappointment, general seasonal blues]. The poem should be uplifting, supportive, and express my affection for her. Focus on her positive qualities, like [mention 2-3 specific qualities you admire, e.g., her kindness, her intelligence, her sense of humor]. Avoid clich\u00e9s and overly sentimental language. Aim for a tone that is comforting and reassuring, like a warm hug. The poem should be approximately 8-12 lines long.",
+  "evaluation": null
+}
