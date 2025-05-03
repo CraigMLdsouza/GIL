@@ -729,7 +729,7 @@ Only include questions for truly important missing information. If the prompt is
         # If no analysis exists, perform it first
         if not self.current_analysis:
             console.print("[yellow]No analysis available. Performing analysis first...[/yellow]")
-            self.current_analysis = await self.prompt_engineer.analyze_intent(self.current_prompt)
+            self.current_analysis = await self.analyze_intent(self.current_prompt)
 
             if "error" in self.current_analysis:
                 console.print(Panel(f"[red]Error: {self.current_analysis['error']}[/red]", border_style="red"))
@@ -757,6 +757,32 @@ Only include questions for truly important missing information. If the prompt is
             for question, answer in additional_info_formatted.items():
                 console.print(f"- {question}: {answer}")
 
+        # Identify missing information
+        missing_info = await self.get_missing_info(self.current_prompt, self.current_analysis)
+
+        if "error" in missing_info:
+            console.print(Panel(f"[red]Error: {missing_info['error']}[/red]", border_style="red"))
+            input("\nPress Enter to continue...")
+            return
+
+        # Back-and-forth interaction to clarify missing information
+        if "missing_information" in missing_info and missing_info["missing_information"]:
+            console.print("[bold cyan]Identifying Missing Information:[/bold cyan]")
+            for item in missing_info["missing_information"]:
+                question = item.get("question", "")
+                importance = item.get("importance", "")
+                example = item.get("example", "")
+
+                console.print(f"[yellow]{question}[/yellow]")
+                console.print(f"[dim]{importance}[/dim]")
+                if example:
+                    console.print(f"[blue]Example:[/blue] {example}")
+
+                # Ask the user for clarification
+                answer = Prompt.ask("Your answer (press Enter to skip)", default=example)
+                if answer:
+                    self.additional_info[question] = answer
+
         # Prepare the prompt for Gemini
         refine_prompt = f"""
 You are an expert prompt engineer. Refine the following prompt to make it more effective, clear, and comprehensive.
@@ -771,7 +797,7 @@ PROMPT ANALYSIS:
 - Style and Tone: {self.current_analysis.get('style_and_tone', 'Unknown')}
 - Target Audience: {self.current_analysis.get('audience', 'Unknown')}
 - Constraints: {', '.join(self.current_analysis.get('constraints', []))}
-- Additional Information: {additional_info_formatted}
+- Additional Information: {self.additional_info}
 
 INSTRUCTIONS:
 1. Incorporate all relevant additional information.
@@ -1373,6 +1399,32 @@ class GIL:
             for question, answer in additional_info_formatted.items():
                 console.print(f"- {question}: {answer}")
 
+        # Identify missing information
+        missing_info = await self.prompt_engineer.get_missing_info(self.current_prompt, self.current_analysis)
+
+        if "error" in missing_info:
+            console.print(Panel(f"[red]Error: {missing_info['error']}[/red]", border_style="red"))
+            input("\nPress Enter to continue...")
+            return
+
+        # Back-and-forth interaction to clarify missing information
+        if "missing_information" in missing_info and missing_info["missing_information"]:
+            console.print("[bold cyan]Identifying Missing Information:[/bold cyan]")
+            for item in missing_info["missing_information"]:
+                question = item.get("question", "")
+                importance = item.get("importance", "")
+                example = item.get("example", "")
+
+                console.print(f"[yellow]{question}[/yellow]")
+                console.print(f"[dim]{importance}[/dim]")
+                if example:
+                    console.print(f"[blue]Example:[/blue] {example}")
+
+                # Ask the user for clarification
+                answer = Prompt.ask("Your answer (press Enter to skip)", default=example)
+                if answer:
+                    self.additional_info[question] = answer
+
         # Prepare the prompt for Gemini
         refine_prompt = f"""
 You are an expert prompt engineer. Refine the following prompt to make it more effective, clear, and comprehensive.
@@ -1387,7 +1439,7 @@ PROMPT ANALYSIS:
 - Style and Tone: {self.current_analysis.get('style_and_tone', 'Unknown')}
 - Target Audience: {self.current_analysis.get('audience', 'Unknown')}
 - Constraints: {', '.join(self.current_analysis.get('constraints', []))}
-- Additional Information: {additional_info_formatted}
+- Additional Information: {self.additional_info}
 
 INSTRUCTIONS:
 1. Incorporate all relevant additional information.

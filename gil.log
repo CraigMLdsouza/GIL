@@ -169,3 +169,67 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^
 AttributeError: 'bool' object has no attribute 'substitute'
 
+2025-05-02 22:00:28,706 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 22:00:29,511 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 22:01:34,691 - GIL - INFO - Sending prompt to gemini-2.0-flash with 293 tokens
+2025-05-02 22:01:37,091 - GIL - INFO - Received response with 231 tokens. Estimated cost: $0.000123
+2025-05-02 22:01:37,100 - GIL - ERROR - Error in main loop: 'bool' object has no attribute 'substitute'
+Traceback (most recent call last):
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1618, in run
+    self.loop.run_until_complete(self.analyze_prompt())
+  File "C:\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1254, in analyze_prompt
+    console.print(table)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1705, in print
+    extend(render(renderable, render_options))
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1326, in render
+    for render_output in iter_render:
+                         ^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 515, in __rich_console__
+    yield from self._render(console, render_options, widths)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 759, in _render
+    self.box.substitute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'substitute'
+
+2025-05-02 22:01:45,754 - GIL - INFO - Sending prompt to gemini-2.0-flash with 334 tokens
+2025-05-02 22:01:50,108 - GIL - INFO - Received response with 535 tokens. Estimated cost: $0.000242
+2025-05-02 22:01:50,116 - GIL - ERROR - Error in main loop: 'bool' object has no attribute 'substitute'
+Traceback (most recent call last):
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1622, in run
+    self.loop.run_until_complete(self.evaluate_prompt_quality())
+  File "C:\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\GIL\prompt.py", line 1482, in evaluate_prompt_quality
+    console.print(table)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1705, in print
+    extend(render(renderable, render_options))
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\console.py", line 1326, in render
+    for render_output in iter_render:
+                         ^^^^^^^^^^^
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 515, in __rich_console__
+    yield from self._render(console, render_options, widths)
+  File "C:\Users\Craig Michael Dsouza\AppData\Roaming\Python\Python312\site-packages\rich\table.py", line 759, in _render
+    self.box.substitute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'substitute'
+
+2025-05-02 22:01:58,778 - GIL - INFO - Sending prompt to gemini-2.0-flash with 198 tokens
+2025-05-02 22:02:01,698 - GIL - INFO - Received response with 319 tokens. Estimated cost: $0.000144
+2025-05-02 22:04:15,573 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-02 22:04:16,625 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-02 22:05:26,290 - GIL - INFO - Sending prompt to gemini-2.0-flash with 366 tokens
+2025-05-02 22:05:28,476 - GIL - INFO - Received response with 269 tokens. Estimated cost: $0.000147
+2025-05-02 22:05:28,478 - GIL - INFO - Sending prompt to gemini-2.0-flash with 248 tokens
+2025-05-02 22:05:30,242 - GIL - INFO - Received response with 133 tokens. Estimated cost: $0.000081
+2025-05-03 20:04:50,449 - GIL - INFO - Initialized gemini-2.0-flash model.
+2025-05-03 20:04:51,267 - GIL - INFO - Successfully loaded spaCy model: en_core_web_sm
+2025-05-03 20:05:34,766 - GIL - INFO - Sending prompt to gemini-2.0-flash with 287 tokens
+2025-05-03 20:05:36,895 - GIL - INFO - Received response with 192 tokens. Estimated cost: $0.000108
+2025-05-03 20:05:36,902 - GIL - INFO - Sending prompt to gemini-2.0-flash with 261 tokens
+2025-05-03 20:05:39,326 - GIL - INFO - Received response with 291 tokens. Estimated cost: $0.000142
+2025-05-03 20:07:14,243 - GIL - INFO - Sending prompt to gemini-2.0-flash with 256 tokens
+2025-05-03 20:07:15,616 - GIL - INFO - Received response with 87 tokens. Estimated cost: $0.000065
